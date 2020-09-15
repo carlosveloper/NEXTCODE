@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.scorpion.nextcode"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+ext {
+    glideVersion = '4.11.0'
+}
+
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    ////////////////
+    //password text
+    implementation 'com.github.anshulagarwal06:PasswordEditText:v1.0'
+
+    ///input
+    implementation 'com.google.android.material:material:1.0.0'
+
+    //ViewModelProviders and Observer.
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.8.1'
+    testImplementation 'com.squareup.okhttp3:mockwebserver:4.8.1'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+
+    ///
+    implementation 'com.android.support:multidex:1.0.3'
+
+///////////////////////
+    implementation 'com.airbnb.android:lottie:3.4.1'
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+
+    //Circle Imageview
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+
+
+    //glide
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+
+    //dialog custom
+    implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+}

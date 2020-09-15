@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NEXTCODE</string>
+    <string name="Registrarse"><u>Registrarse</u></string>
+    <string name="IniciarSesion"><u>Iniciar Sesión</u></string>
+    <string name="sesion">Iniciar Sesión</string>
+    <string name="noregistrado">Aún no estas registrado</string>
+    <string name="ingresar">Ingresar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

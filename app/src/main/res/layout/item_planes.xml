@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginBottom="20dp"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CIFotoPlan"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="0"
+        android:src="@drawable/ic_launcher_background"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/TVNombrePLan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bronce"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textColor="@color/col_negrosolida"
+            android:textSize="25sp"
+            />
+            <TextView
+                android:layout_weight="1"
+
+                android:id="@+id/TVTipoPlan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hogar"
+                android:maxLines="1"
+                android:textColor="@color/col_grissuave"
+                android:textSize="18sp"
+                />
+        />
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/TVValorPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="$199"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorAzulDark"
+            android:textSize="24sp"
+            />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+    <View
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/col_gris"
+        >
+
+    </View>
+
+</LinearLayout>
+
+
+
+
+
