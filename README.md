@@ -18,6 +18,8 @@ Permite ver todas las facturas del usuario
 
 Permite observar los detalles de la factura
 
+No consta con una pantalla al no tener datos en su caso se presenta un toast avisando que no tiene un plan o factura
+
 
 
 ![planes](https://user-images.githubusercontent.com/41177884/93237181-5dfeb880-f745-11ea-85c0-1c92754b3320.jpg)
